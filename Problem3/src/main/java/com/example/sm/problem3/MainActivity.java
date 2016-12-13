@@ -27,9 +27,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        for(CustomerThread ct : list){
+       for(CustomerThread ct : list){
 
             try {
+
+
+
                 // need something here
             } catch (InterruptedException e) { }
         }
@@ -51,7 +54,7 @@ class CustomerThread extends Thread{
     CustomerThread(Customer customer){
         this.customer = customer;
     }
-    // need something here
+
 }
 
 abstract class Person{
@@ -66,11 +69,15 @@ abstract class Person{
 class Customer extends Person{
 
     String name;
+
     Customer(String name){
         this.name = name;
     }
 
-    // need something here
+    @Override
+    void work() {
+
+    }
 }
 
 
@@ -82,8 +89,12 @@ class Manager extends Person{
     }
 
     void sort(){ // 직접 소팅 알고리즘을 이용하여 코딩해야함. 자바 기본 정렬 메소드 이용시 감
+        int arr[];
+        for(int i=0;i<10;i++)
+             {
+                 list.
 
-        // need something here
+             }
 
     }
 
